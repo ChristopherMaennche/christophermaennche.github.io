@@ -1,0 +1,45 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css");
+body{
+    background-color: darkslategray;
+    color: #E6E6E6;
+}
+.darkMode{
+    background-color: #E6E6E6;
+    border-radius: 10px;
+    color: black;
+    width: 6.5%;
+    position: fixed;
+    top: 1%;
+    left: 1%;
+}
+.listDiv{
+    position: relative;
+    top: 5%;
+    left: 2.5%;
+    width: 94.5%;
+    height: 80%;
+    overflow-y: scroll;
+}
+h2{
+    position: relative;
+    left: 2.5%;
+    text-decoration: none;
+    color: #E6E6E6;
+    border: 1px Solid #E6E6E6;
+    width: 94.5%;
+}
+h2:hover{
+    background-color: #264040;
+    color: #E6E6E6;
+}
+button{
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    border: 0px;
+    color: #E6E6E6;
+}
+button:hover{
+    text-decoration: underline;
+    color: #E6E6E6;
+}

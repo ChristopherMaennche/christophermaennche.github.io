@@ -1,0 +1,39 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+    .SideBar{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 7%;
+        background-color: #1b54d9;
+        font-family: 'bangers', cursive;
+        color: white;
+        font-decoration: none;
+        z-index: 4;
+    }
+    .Navigation-Dash-button{
+        position: relative;
+        top: 10%;
+        color: white;
+        text-decoration: none;
+        border-bottom: 2px Solid White;
+        text-align: center;
+    }
+    .Navigation-Elist-button{
+        position: relative;
+        top: 20%;
+        color: white;
+        text-decoration: none;
+        border-bottom: 2px Solid White;
+        text-align: center;
+    }
+    .Navigation-Account-button{
+        position: relative;
+        top: 80%;
+        color: white;
+        text-decoration: none;
+        border-top: 2px Solid White;
+        text-align: center;
+    }
+</style>

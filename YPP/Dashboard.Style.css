@@ -1,0 +1,19 @@
+<style>
+    .dashboard-div-top{
+        position: absolute;
+        top: 40px;
+        left: 7%;
+        height: 30%;
+        width: 93%;
+        color: #1b54d9;
+        background-color: #E0E0E0;
+        display: block;
+        font-family: 'bangers', cursive;
+    }
+    .dashboard-div-top-title{
+        position: relative;
+        top: 10px;
+        left: 10px;
+        font-size: 50px;
+    }
+</style>

@@ -1,0 +1,73 @@
+<html>
+    <head id="head">
+        <title>Project Central</title>
+        <style>
+            .darkMode{
+                background-color: darkslategray;
+                border-radius: 10px;
+                color: #E6E6E6;
+                width: 6.5%;
+                position: fixed;
+                top: 1%;
+                left: 1%;
+            }
+        </style>
+        <script>
+            checked = false;
+        </script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="custom-control custom-switch darkMode">
+            <input type="checkbox" class="custom-control-input" id="customSwitch1" onchange="checkSwitched()">
+            <label class="custom-control-label" id="custom-control-label" for="customSwitch1"></label>
+        </div>
+        <center>
+            <h1>Project Central</h1>
+            <h3>Ran By Xampp</h3>
+        </center>
+        <div class="listDiv">
+            <h2><button onclick="window.open('https://myvcmo.org/')">MyVCMO.org</button></h2>
+            <h2><button onclick="window.open('./QuarantineSurvival1996/')">./QuarantineSurvival1996/</button></h2>
+            <h2><button onclick="window.open('./Random Projects/')">./Random Projects/</button></h2>
+            <h2><button onclick="window.open('./SSL-TO/')">./SSL-TO/</button></h2>
+            <h2><button onclick="window.open('./TicTacToePHP/')">./TicTacToePHP/</button></h2>
+            <h2><button onclick="window.open('./TodoList/')">./TodoList/</button></h2>
+            <h2><button onclick="window.open('./YPP/')">./YPP/</button></h2>
+            <h2><button onclick="window.open('./Zoid-CRM-dev/')">./Zoid-CRM-dev/</button></h2>
+            <h2><button onclick="window.open('./Zoid-CRM-live/')">./Zoid-CRM-live/</button></h2>
+            <h2><button onclick="window.open('./Zoid-MusicPlayer/')">./Zoid-MusicPlayer/</button></h2>
+            <h2><button onclick="window.open('./Cyclist Tracker/')">./Cyclist Tracker/</button></h2>
+        </div>
+        <script>
+            checkSwitched = function(){
+                if(checked === false){
+                    checked = true;
+                }else{
+                    checked = false;
+                }
+                if(checked === true){
+                    document.getElementById("head").innerHTML = '<link rel="stylesheet" href="./darkmode.css">';
+                }else{
+                    document.getElementById("head").innerHTML = '<link rel="stylesheet" href="./lightmode.css">';
+                }
+            }
+            if(checked === true){
+                document.getElementById("head").innerHTML = '<link rel="stylesheet" href="./darkmode.css">';
+            }else{
+                document.getElementById("head").innerHTML = '<link rel="stylesheet" href="./lightmode.css">';
+            }
+
+            setInterval(function(){
+                if(checked === true){
+                    document.getElementById("custom-control-label").innerHTML = "Dark Mode";
+                }else{
+                    document.getElementById("custom-control-label").innerHTML = "Light Mode";
+                }
+            },40)
+        </script>
+    </body>
+</html>

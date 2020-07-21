@@ -1,0 +1,19 @@
+.stravaLoginDiv{
+    border: 1px Solid black;
+    border-radius: 10px;
+    width: 20%;
+    height: 11%;
+}
+.stravaLoginImg{
+    position: relative;
+    left: 0px;
+    max-width: 24.7%;
+    height: auto;
+    border-right: 1px Solid black;
+    border-radius: 10px;
+}
+.stravaLoginBtn{
+    position: relative;
+    top: -42.5%;
+    left: 5%;
+}
