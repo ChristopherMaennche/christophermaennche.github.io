@@ -12,9 +12,15 @@ body{
     top: 1%;
     left: 1%;
 }
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-track {
+  width: 0px;
+}
 .listDiv{
     position: relative;
-    top: 5%;
+    top: 3%;
     left: 2.5%;
     width: 94.5%;
     height: 80%;
